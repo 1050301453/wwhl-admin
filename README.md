@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# wwhl-admin
-wwhl-parent前台项目
-=======
 # wwhl-admin前台项目
 ## Build Setup
 
@@ -46,4 +42,3 @@ npm run lint
 # code format check and auto fix
 npm run lint -- --fix
 ```
->>>>>>> master
