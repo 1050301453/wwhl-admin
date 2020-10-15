@@ -143,7 +143,7 @@ export default {
           this.$message({
               type: 'success',
               message: '删除成功!'
-            })         
+            })
         }).catch((response) => {
           console.log(response)
           if(response==='cancel'){
