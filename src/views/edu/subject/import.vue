@@ -60,6 +60,9 @@ export default {
             type: 'success',
             message: response.message
         })
+        this.$router.push({
+          path:'/edu/subject/list'
+        })
         } 
     },
 
