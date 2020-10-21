@@ -33,5 +33,11 @@ export default{
           method: 'put',
           data: eduTeacher
       })
-  }
+  },
+  getListTeacher() {
+    return request({
+        url: `/eduservice/teacher/teacher`,
+        method: 'get'
+    })
+}
 }
