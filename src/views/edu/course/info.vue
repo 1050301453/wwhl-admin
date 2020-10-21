@@ -59,7 +59,8 @@
 
       <!-- 课程简介 TODO -->
       <el-form-item label="课程简介">
-        <el-input v-model="courseInfo.description" placeholder=""/>
+        <!-- <el-input v-model="courseInfo.description" placeholder=""/> -->
+        <tinymce v-model="courseInfo.description" :height="300" />
       </el-form-item>
 
       <!-- 课程封面 TODO -->
@@ -78,7 +79,7 @@
 import course from '@/api/edu/course'
 import subject from '@/api/edu/subject'
 import teacher from '@/api/edu/teacher'
-
+import Tinymce from '@/components/Tinymce'
 const defaultForm = {
   title: '',
   subjectId: '',//二级分类id
@@ -90,6 +91,7 @@ const defaultForm = {
   price: 0
 }
 export default {
+  components: { Tinymce },
   data() {
     return {
       courseInfo: defaultForm,
@@ -182,3 +184,8 @@ export default {
   }
 }
 </script>
+<style scoped>
+.editor-content{
+  margin-top: 20px;
+}
+</style>
