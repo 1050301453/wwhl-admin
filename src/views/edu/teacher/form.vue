@@ -46,7 +46,7 @@
                         :width="300"
                         :height="300"
                         :key="imagecropperKey"
-                        :url="BASE_API+'/eduoss/fileoss/upload'"
+                        :url="BASE_API+'eduoss/fileoss/upload'"
                         field="file"
                         @close="close"
                         @crop-upload-success="cropSuccess"/>
@@ -110,7 +110,7 @@ export default {
           message: '保存成功!'
         })
       }).then(response=>{
-        this.$router.push({path:'/edu/teacher'})
+        this.$router.push({path:'/edu/teacher/list'})
       }).catch((response)=>{
         this.$message({
           type: 'error',
@@ -142,7 +142,7 @@ export default {
                 message: '修改成功!'
             })
         }).then(resposne => {
-            this.$router.push({ path: '/edu/teacher' })
+            this.$router.push({ path: '/edu/teacher/list' })
         }).catch((response) => {
             // console.log(response)
             this.$message({

@@ -70,7 +70,7 @@
           :show-file-list="false"
           :on-success="handleAvatarSuccess"
           :before-upload="beforeAvatarUpload"
-          :action="BASE_API+'/eduoss/fileoss/upload'"
+          :action="BASE_API+'eduoss/fileoss/upload'"
           class="avatar-uploader">
           <img :src="courseInfo.cover">
         </el-upload>
